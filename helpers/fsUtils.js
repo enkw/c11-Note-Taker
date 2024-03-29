@@ -1,4 +1,4 @@
-// Borrowed this from the express mini project from class, thank you
+// Borrowed this from the express mini project from class
 const fs = require('fs');
 const util = require('util');
 
