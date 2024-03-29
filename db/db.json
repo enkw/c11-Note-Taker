@@ -1,17 +1,1 @@
-[
-    {
-        "title": "figure out delete",
-        "text": "cuz it ain't workin dawg",
-        "note_id": "8eb8de53-9f85-4b90-ac7e-0260f56da747"
-    },
-    {
-        "title": "load notes when clicked",
-        "text": "not working either",
-        "note_id": "8e8685ea-264a-498c-9554-c64363420af8"
-    },
-    {
-        "title": "delete notes",
-        "text": "the delete button sends a console.log saying \"Data written to ./db/db.json\" which it should be doing, but I'm guessing importing fsUtils has caused this issue since there appears the be code handling notes in the index.js. If I don't get to it tonight, move the aforementioned code to the notes.js route and see if that can help rewrite the delete method.",
-        "note_id": "80950be0-700f-494e-999a-1790e3c6f2d6"
-    }
-]
+[]
