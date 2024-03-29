@@ -15,6 +15,7 @@ const notePath = path.resolve(__dirname, 'db', 'db.json');
 let notes = [];
 
 // Checks db.json for existing notes
+// Doesn't appear to work yet
 fs.readFile(notePath, 'utf8', (err, data) => {
     if (err) {
         console.error('Error reading notes from db.json', err);
@@ -29,6 +30,7 @@ fs.readFile(notePath, 'utf8', (err, data) => {
 });
 
 // Saves notes to db.json
+// Appears to be writing to db.json, but needs further testing
 const saveNotes = () => {
     fs.writeFile(notePath, JSON.stringify(notes), (err) => {
         if (err) {
@@ -37,16 +39,25 @@ const saveNotes = () => {
     });
 };
 
-app.get('/', (req, res) =>
+app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/index.html'));
-);
+});
 
 app.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/notes.html'));
 });
 
 app.get('/api/notes', (req, res) => {
-    res.json(notes);
+    const { title, text } = req.body;
+    const newNote = {
+        title,
+        text,
+        id: uuidv4(),
+    };
+
+    notes.push(newNote);
+    saveNotes();
+    res.json(newNote);
 });
 
 app.listen(PORT, () =>
