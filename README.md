@@ -1,65 +1,41 @@
 # 11 Express.js: Note Taker
 
-
-## Acceptance Criteria
-
-WHEN I click on an existing note in the list in the left-hand column
-THEN that note appears in the right-hand column and a "New Note" button appears in the navigation
-
-WHEN I click on the "New Note" button in the navigation at the top of the page
-THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column and the button disappears
-
 ## Description
   
-This application is intended to streamline the README creation process.
-Working on this was my first experience with almost anything pertaining to the license and badge portions of README creation.
+This application allows you to easily take notes and save them online.
   
 ## Table of Contents (Optional)
   
  - [Installation](#installation)
  - [Usage](#usage)
  - [Credits](#credits)
- - [License](#license)
  - [Features](#features)
- - [How to Contribute](#how-to-contribute)
- - [Tests](#tests)
  - [Questions](#questions)
   
 ## Installation
   
-No installation needed!
+No installation needed, this application runs in your browser!
   
 ## Usage
   
-To use this application, clone the repo, run nodejs on index.js, then respond to the prompts as they appear. Once finished, the application generates a README based on your responses to the questions.
+To use this application, click [here](https://c11-note-taker.onrender.com/) and select "Get Started". From here you're able to enter a title for your note, and a body, 
+which allows you to save and/or delete the note once you're finished.
 
-Example of prompts:
-![Git Bash showing the application presenting questions](./screenshots/Screenshot-of-prompt.png)
-
-Or you can [watch a breif ~2 minute video demonstration](https://drive.google.com/file/d/1oSL23y9zeA6RKMeNkJh8-xS52Jap3vd-/view)
+Example:
+![Image of a note showing a shopping list](./screenshots/Screenshot-of-notes.png)
   
 ## Credits
   
-Shouts out to inquirer and everyone on stackoverflow, you the realest!
+Shouts out to our mini-project from the Express module and Dan for letting us know we could use it!
 
-## License
+Whoever wrote the starter code for this.
 
-There is actually no license associated with this project. The attached badge and license are only there as part of the demonstration of the application working.
-
-This project is licensed under the [MIT](https://opensource.org/licenses/MIT)
+And of course, Ian Wolfe.
   
 ## Features
   
-This project features inquirer.
-  
-## How to Contribute
-  
-N/A
-  
-## Tests
-  
-N/A
+This project features express and by extension node.
 
 ## Questions
 
-For any questions about this project, please visit my [GitHub](https://github.com/enkw) or email me at notreal@haha.lol.
+For any questions about this project, please visit my [GitHub](https://github.com/enkw).
