@@ -37,6 +37,7 @@ notes.delete('/:note_id', (req, res) => {
     });
 });
 
+// POST route for saving notes
 notes.post('/', (req, res) => {
     console.log(req.body);
 

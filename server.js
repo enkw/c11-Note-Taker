@@ -15,6 +15,7 @@ app.use(express.static('public'));
 // Variable path to the database
 const notePath = path.resolve(__dirname, 'db', 'db.json');
 
+// Routes for notes
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/index.html'));
 });
@@ -28,6 +29,7 @@ app.get('*', (req, res) =>
   res.sendFile(path.join(__dirname, 'public/index.html'))
 );
 
+// Starts the listener at port 3001 or whatever render gives us
 app.listen(PORT, () =>
     console.log(`App listening at http://localhost:${PORT}`)
 );
